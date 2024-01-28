@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="C:/Users/Soad/Downloads/camera-solid.svg">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/camera?s=solid">
+
+
+    <title>login</title>
+</head>
+
+<body>
+    <h1>LOGIN</h1>
+    <hr>
+    <br><br>
+    <table style="margin-left:70% ;">
+        <td>
+            <a href="image1.html" style="margin-left:20% ; display: inline;font-size:16px;">
+                <span class="fa fa-camera" style="color:#D67F54; font-size: 18px;">
+            <span  style="margin-left:1px ; color: black;font-size:16px;">Image</span></span>
+            </a>
+        </td>
+        <td>
+            <a href="video.html" style="margin-left:20%;">
+                <span class="fa fa-video" style="color:#D67F54;font-size:18px;">
+            <span  style="margin-left:1px ; color: black;display: inline;font-size:16px;">videos</span></span>
+            </a>
+        </td>
+        <td>
+            <a href="login.html" style="margin-left:20% ;">
+                <span class="fa-solid fa-id-card" style="color:#D67F54;font-size:18px;">
+            <span  style="margin-left:1px ; color: black;display: inline;font-size:16px;">login</span></span>
+        </td>
+        <td>
+            <a href="home.html" style="margin-left:20% ;">
+                <span class="fa-solid fa-house" style="color:#D67F54;font-size:18px;">
+              <span  style="margin-left:1px ; color: black;display: inline;font-size:16px;">Home</span></span>
+        </td>
+
+    </table>
+    <br><br>
+
+    <form action="" method="get">
+        <fieldset class="login-container">
+
+            <legend>Data Personality</legend>
+            <img src="Tablet login-pana.png">
+
+            <i class="fa-solid fa-user" style="color:#D67F54;font-size:20px;"></i>
+            <input placeholder="Name" type="text"><br>
+            <i class="fa-solid fa-envelope" style="color:#D67F54;font-size:20px;">
+        </i><input placeholder="Email" type="email"><br>
+            <i class="fa-solid fa-phone" style="color:#D67F54;font-size:20px;"></i><input placeholder=090000000 type="number"><br>
+            <i class="fa-solid fa-key" style="color:#D67F54;font-size:20px;"></i>
+            <input value="Password" type="password">
+            <button class="s">Login</button>
+
+        </fieldset>
+        <div class="loader"></div>
+
+    </form>
+    <br><br><br>
+
+
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.body.style.opacity = 1; // عند تحميل الصفحة تظهر بشكل تدريجي
+        document.querySelector('.login-container').style.transform = 'scale(1)'; // عند تحميل الصفحة تكبر بشكل تدريجي
+    });
+    document.querySelector('button').addEventListener('click', function(event) {
+        event.preventDefault();
+        alert('Logging in...');
+        // Add your login logic here
+
+
+    });
+</script>
+
+</html>

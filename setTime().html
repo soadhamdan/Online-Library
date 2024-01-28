@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body{
+        background-color: aqua;
+        background-repeat:No-repeat;
+    
+    }
+    div{
+        width:25%;
+        margin:auto;
+        padding: 20%;
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border:solid;
+        
+    }
+    </style>
+    <title>setTime</title>
+    <div></div>
+</head>
+<body>
+  <script>
+  var b=document.querySelector("div");
+
+  
+
+
+    var s=["url('Metrics-pana.png')",
+        "url('Task-rafiki.png')",
+   "url('Sharing articles-pana.png')","url('Tablet login-pana.png')"]
+
+
+
+    setTimeout(function(){
+        for(i=0;i<=s.length;i++){
+            
+        b.style.backgroundImage=s[i];
+}  
+
+    },2000)
+
+console.log("finnch");
+  </script>  
+</body>
+</html>
+
+
+function tmp(i){
+    setTimeout(function(){
+       function tmp2(i){
+          setTimeout(function(){
+              console.log(i)
+           },1000)   
+       }
+       tmp2(i)
+       i+=2
+    },1000)
+ }
+ 
+ for(i=0;i<3;i++){
+   tmp(i)
+ }
+ 
+ 

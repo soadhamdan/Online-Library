@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    farmers = [ {
+         name: "omer",
+          farm: "farm1", 
+          size:{latitude: 15, longtitude: 20}, 
+     partners:[{ name: "person1", percent:20},
+      {name: "person2 ", percent: 30},
+      {name: "percon3",percent:40}],
+    },
+    { name: "Ahmed",
+      farm: "farm2", 
+      size: {latitude: 15, longtitude: 20}
+    ,  partners:[
+        {  name: "person1", percent:20},
+      {name:"person2 ", percent: 30}, 
+      {name:"percon3",percent:40}]
+      
+}]
+console.log(farmers[0].farm)
+console.log(farmers[0].size.longtitude)
+console.log(farmers[1].partners[0].percent)
+
+console.log(farmers[0].partners.length)
+
+console.log(farmers[1].partners[1].percent+=100 )
+farmers[0].partners.push({name:"percon4",percent:10})
+console.log(farmers[0].partners)
+console.log(farmers[0].partners[3])
+for(let i=0;i<=3;i++){
+    console.log(farmers[0].partners[i].percent)
+}
+console.log(farmers[0].partners.forEach(function(){
+    if(this.name=="Ali" ){
+        console.log("Yes")
+    }else{
+        console.log("No")
+    }
+}))
+
+
+    </script>
+</body>
+</html>

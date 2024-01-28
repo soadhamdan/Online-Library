@@ -1,0 +1,237 @@
+body {
+    background-color: #a4c392;
+    opacity: 0;
+    /* تبدأ الصفحة بشكل مخفي */
+    transition: all 2s;
+}
+
+h1 {
+    font-family: "Algerian";
+    text-align: center;
+    font-size: 50px;
+    font-weight: 200;
+    margin-left: -5%
+}
+
+fieldset {
+    margin: auto;
+    padding: 20px !important;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: "Bahnschrift Light Condensed";
+    width: 50%;
+    box-shadow: 3px 7px 20px#D67F54;
+    border-radius: 30px;
+    padding-block-start: 0 !important;
+    padding-inline-start: 0 !important;
+    padding-inline-end: 0 !important;
+    padding-block-end: 0 !important;
+    transform: scale(0.9);
+    /* بداية بحجم مصغر */
+    transition: all 0.5s ease;
+    /* تأثير التحول */
+}
+
+.d {
+    display: inline;
+    width: 35%;
+}
+
+legend {
+    border-radius: 20px;
+    box-shadow: 0 0 10px #D67F54;
+    font-size: 10px;
+    font-family: "Arial Black";
+    font-size: 15px;
+    font-weight: 100;
+}
+
+input {
+    display: inline;
+    width: 40%;
+    color: grey;
+    margin: auto;
+    width: 45%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px white solid;
+    margin: 10px 0;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+input:hover {
+    border: #D67F54 double;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #3498db;
+    /* لون الحدود العلوية */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    /* تطبيق الحركة */
+    margin: 20% auto;
+    /* تحديد الموقع بالنسبة للشاشة */
+}
+
+img {
+    size: 40%;
+    width: 45%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+.s {
+    background-color: #D67F54;
+    border: thin solid #D67F54;
+    margin: auto;
+    font-family: "Arial Black";
+    border-radius: 23px;
+    font-size: 20px;
+    font-weight: 300;
+    display: block;
+    padding: 5px 40px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: "Algerian";
+    box-shadow: 2px 2px 2px #D67F54;
+    transition: all 2s;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+a:hover {
+    color: hsl(0, 0%, 100%);
+    transform: scale(1.1);
+}
+
+h3:hover {
+    background-color: #a4c392;
+}
+
+div {
+    padding-bottom: 21%;
+    display: inline;
+    width: 50%;
+    font-family: "Arial Black";
+    position: relative;
+    margin: 50px;
+    transition: all 500ms;
+    position: relative;
+}
+
+h3:hover {
+    background-color: #a4c392;
+}
+
+figure {
+    width: 10%;
+}
+
+figure figcaption {
+    width: 20%;
+}
+
+hr {
+    border: #D67F54 solid 2px;
+}
+
+button.s {
+    transition: all 0.5s;
+    background-color: #a4c392;
+    color: #D67F54;
+    font-weight: 50px;
+    border: 2px solid #D67F54;
+    cursor: pointer;
+}
+
+button.s:hover {
+    background-color: #D67F54;
+    transform: scale(1.05);
+    color: white;
+}
+
+.i1 {
+    justify-content: center;
+    width: 190%;
+    border: #D67F54 double 5px;
+    transition: all 0.5s
+}
+
+.i1:hover {
+    background-color: #D67F54;
+    transform: scale(1.1);
+}
+
+span {
+    width: 80%;
+    font-family: "Rockwell Condensed";
+    font-weight: 700;
+    margin-left: 50%
+}
+
+p {
+    margin: auto;
+}
+
+.g {
+    margin-left: 0;
+    width: 23%;
+    padding: 4%;
+    display: inline;
+}
+
+.g:hover {
+    background-color: #D67F54;
+    transform: scale(1.1);
+}
+
+i {
+    display: inline;
+    margin: 0;
+    margin-left: 25%;
+    margin-right: 5px;
+    background-color: #a4c392;
+    padding: 0%;
+    font-size: 25%;
+}
+
+div img {
+    transition: all 2s;
+}
+
+div img :hover {
+    transform: scale(1.1);
+}
+
+button.n {
+    transition: all 2s;
+    background-color: #D67F54;
+    color: #588040;
+}
+
+button.n:hover {
+    background-color: #D67F54;
+    color: white;
+    transform: scale(0.8);
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+   <header></header> 
+   <h1 style="text-align:center; color:white">Welcome</h1>
+   <hr>
+   <img src="Tablet login-pana.png" width="30%" height="20%" style="text-align:center;">
+
+   <form method="get" action="login.php">
+
+    <fieldset>
+        
+        <table>
+        <legend>The Basic Details</legend>
+    
+        <label for="t"> Name   </label>  <input type="text" value="First Name">
+    <input type="text" value="Last  Name"><br>
+        <br>
+        <label for="ph">Phone</label><input type="tel" id="ph"   value="+249" > <input type="search" style="width: 300px;">
+        <br>
+        <style>
+            img{
+                top: 0;
+                right: 10%;
+            }
+            *{
+                background-color: #a0515156;
+            }
+            legend{
+                color: white;
+            }
+            label{
+                color: white;
+            }
+            #ph{
+        
+    
+                width: 50px;
+            }
+            fieldset{
+                width: 35%;
+            
+
+            }
+        </style>
+        <br>
+        <label for="e">Email</label><input type="email" id="e" ><br></table>
+    </fieldset>
+    <br><br>
+    <fieldset >
+        <legend>Other Details</legend>
+        <input type="radio" name="n1" value="Fe"><label>Female</label>
+        <input type="radio" name="n1" value="Ma"><label>Male</label>
+        <br> 
+    </fieldset><br><br>
+    <fieldset>
+        <legend>The Disciplines</legend>
+        <label for="d">Disciplines</label> 
+        <select id="d">
+            
+<option>CS</option>
+<option selected="selected">SE</option>
+<option> IT</option>
+        </select>
+
+        <label></label>
+    </fieldset>
+    <fieldset>
+        
+        <legend>Comments</legend>
+        <textarea cols="20" rows="5"id="Remarks" style="width: 90%;"></textarea>
+    </fieldset>
+    <br><hr>
+    <label for="c"> You Can Select The Best Color  </label><input type="color" value="#label" id="c"><br>
+    <input type="submit" style="border-color:white">
+   </form>
+
+
+</body>
+</html>

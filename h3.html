@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H3</title>
+    <style>
+        body{
+            background-color: bisque;
+             }
+             h3{
+                background-color: white;
+                padding: 10%; 
+                border-top-left-radius:600px;
+                border-top-right-radius:600px ;
+                border-bottom-left-radius:600px ;
+                border-bottom-right-radius:600px ;
+                background-image: url(2.png);
+                background-size:55%;
+                background-position: center;
+                background-repeat:no-repeat;
+                margin-left:35% ;
+                width: 0;
+                height: 100%;
+                border: black double;
+            }
+
+            button{
+                margin-left: 1%;
+                width: 15%;
+
+            }
+            div{
+                background-image:url(red.png);
+                margin-left: 20%;
+            }
+       
+    </style>
+</head>
+<body><div>
+<button style="background-color: red" onclick="changeColor('red')" onmouseup="('red.png')"
+>red</button>
+<button style="background-color:yellow;" onclick="changeColor('yellow') ">yellow</button>
+ <button style="background-color:brown ;" onclick="changeColor('brown')">brown</button> 
+ <button style="background-color:orange;" onclick="changeColor('orange')"
+ oncllick=" ">orange</button></div><br><br>
+<h3 ></h3>
+<script>
+var color=document.querySelector("h3");
+function changeColor(colorName){
+    color.style.backgroundColor=colorName;
+   
+    if(colorName=="orange"){
+        color.style.backgroundImage='url("2.png")'}
+        if(colorName=="yellow"){
+
+            color.style.backgroundImage='url("3.png")'
+   var siz= color.style.backgroundSize="55%"}
+           if(colorName=="brown"){
+        color.style.backgroundImage='url("3.png")'
+        var siz= color.style.backgroundSize="55%"}
+        
+        if(colorName=="red"){
+        color.style.backgroundImage='url("1.png")'
+   var siz= color.style.backgroundSize="120%"}
+        
+       }
+       changeColor(colorName)
+</script>
+
+</body>
+</html>
